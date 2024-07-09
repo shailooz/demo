@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 import os
@@ -37,7 +37,7 @@ def create_tables():
 # default route
 @app.route('/')
 def index():
-    return "Welcome to the number storage API!"
+    return render_template("index.html")
 
 # route to create or update the number
 @app.route('/upsert', methods=['POST'])
