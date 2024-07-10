@@ -1,6 +1,7 @@
 import tkinter as tk
 import requests
 
+#url = 'https://35bc219e-6dbf-473e-9990-f25f5282ae46-00-3xyzp1pzf1w4.sisko.replit.dev:3000/'
 url = 'http://127.0.0.1:5000/'
 
 
